@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מערכת ויזואליזציה לקבלת החלטות</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: #333;
+            line-height: 1.6;
+            direction: rtl;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #fff;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2em;
+            color: #f0f0f0;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            color: #fff;
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #f0f0f0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>מערכת ויזואליזציה לקבלת החלטות</h1>
+            <p>מערכת מתקדמת לניתוח נתוני מכירות, רווחים והנחות, המיועדת להגדלת היקפי המכירות וייעול תהליכי קבלת החלטות.</p>
+        </header>
+        <section class="section">
+            <h2>מטרות המערכת</h2>
+            <p>המערכת נועדה לספק תובנות ויזואליות בזמן אמת, תוך התמקדות בשלושה תחומים עיקריים:</p>
+            <ul>
+                <li>ניתוח אזורי מכירה להבנת דפוסי רכישה גיאוגרפיים.</li>
+                <li>מעקב אחר רווחים לזיהוי מגמות וייעול תהליכים.</li>
+                <li>ניהול הנחות לקידום מכירות ממוקדות.</li>
+            </ul>
+        </section>
+        <div class="button-container">
+            <a href="dash1.html" class="btn">מערכת 1 - אזורי מכירה</a>
+            <a href="dash2.html" class="btn">מערכת 2 - רווחים</a>
+            <a href="dash3.html" class="btn">מערכת 3 - הנחות</a>
+        </div>
+        <footer>
+            <p>© 2025 מערכת ויזואליזציה לקבלת החלטות</p>
+        </footer>
+    </div>
+    <script>
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
